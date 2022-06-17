@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel blogs can be both beautiful, informative and interactive.">
+    <meta name="keywords" content="nature, elephant, tranding, post, discovery, shop, summer">
+    <meta name="author" content="Salome Mosiava">
+    <!-- fb meta tags -->
+    <meta property="og:url"                content="https://salomemosiava.github.io" />
+    <meta property="og:type"               content="website"/>
+    <meta property="og:title"              content="My Website"/>
+    <meta property="og:description"        content="Travel blogs can be both beautiful, informative and interactive." />
+    <meta property="og:image"              src="img/Image.png" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/Logo-original.svg">
+    <title>Discovery</title>
+</head>
+<body>
+    <header class="header">
+        <div class="burger" id="toggleBurger">
+            <img src="img/menu icon.png" alt="">
+        </div>
+        <a  class="logo-header" href="index.html"><img src="img/LOGO.svg" alt="logo"></a>
+        <nav class="nav" id="nav-menu">
+            <ul class="nav-ul">
+                <div class="burger-nav" id="navbarlinks">
+                    <li class="nav-li">
+                        <img src="img/home.png" alt="">
+                        <a class="a-nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-li">
+                        <img src="img/discover.png" alt="">
+                        <a class="a-nav-link" href="discovery.html">Discovery</a>
+                    </li>
+                    <li class="nav-li">
+                        <img src="img/photos.png" alt="">
+                        <a class="a-nav-link" href="#Home">Photos</a>
+                    </li>
+                    <li class="nav-li">
+                        <img src="img/mail.png" alt="">
+                        <a class="a-nav-link" href="#Home">Contact</a>
+                    </li>
+                    <li class="nav-li">
+                        <img src="img/userr.png" alt="">
+                        <a class="a-nav-link" href="#Home">profile</a>
+                    </li>
+                </div>
+                <li class="nav-li user-div">
+                    <a href="#Home"><img src="img/christopher-campbell-28567-unsplash.png" alt="user"></a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <img src="img/home.svg" alt="home">
+                <h5 class="title">Discovery</h5>
+                <span>/</span>
+                <h5 class="title">NEW post</h5>
+            </div>
+            <img src="img/filter.svg" alt="filter">
+        </div>
+    </section>
+
+    <section class="section scroll">
+        <div class="post-wraper" id="post-block"></div>
+
+        <div class="overlay" id="overlay">
+            <div id="content"></div>
+            <div id="close"> X </div>
+        </div>
+    
+        <div class="add-post" id="add-post">  </div>
+        <div id="overlay-add" class="overlay-add">
+            <div id="close-2"> X </div>
+            <form id="form" action="">
+                <div>
+                    <div><label for=""> Title </label></div>
+                    <input class="input-field" id="title" type="text">
+                </div>
+                <div>
+                    <div><label for=""> Description </label></div>
+                    <textarea class="input-field" name="Description" id="body" placeholder="Description"></textarea>
+                </div>
+                <button class="add-post-button">Add Post</button>
+            </form>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="footer-left">
+            <img src="img/LOGO2.svg" alt="">
+            <div class="grid-footer">
+                <ul class="ul-footer-menu">
+                    <li>Home</li>
+                    <li>discovery</li>
+                    <li>Photos</li>
+                    <li>Contact</li>
+                </ul>
+                <ul class="ul-footer-menu">
+                    <li>About</li>
+                    <li>Help</li>
+                    <li>Terms</li>
+                    <li>Guidlines</li>
+                </ul>
+                <ul class="ul-footer-menu">
+                    <li>Testimonials</li>
+                    <li>Advertise</li>
+                    <li>Integrations</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
+        <div class="grid">
+            <div>
+                <div class="email-div">
+                    <input class="email" type="email" placeholder="Email" id="email" onkeydown='validateEmail()'>
+                    <img src="img/send.svg" alt="">
+                </div>
+                <span class="error-text" id="error_email"></span>
+                <p class="email-text">Stay in touch with us for the freshest products!</p>
+            </div>
+            <div class="social-media">
+                <img src="img/instagram.svg" alt="">
+                <img src="img/twitter.svg" alt="">
+                <img src="img/facebook.svg" alt="">
+                <img src="img/web.svg" alt="">
+            </div>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+<script src="js/api.js"></script>
+</body>
+</html>
